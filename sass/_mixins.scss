@@ -1,0 +1,6 @@
+// media queries 
+
+// phone 0-600px
+@mixin phone {
+  @media (max-width: 37.5em) { @content }; 
+}
