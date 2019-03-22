@@ -17,11 +17,11 @@ body {
   line-height: 2;
   color: rgb(85, 84, 84);
 
-  padding: 3rem;
 }
 
 .main {
   text-align: center;
+  margin-top: 5rem;
 }
 
 .heading {
@@ -109,4 +109,15 @@ body {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.map {  
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
+  filter: grayscale(90%);
 }
