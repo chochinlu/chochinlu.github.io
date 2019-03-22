@@ -1,0 +1,23 @@
+{
+  "name": "chochinlu.github.io",
+  "version": "1.0.0",
+  "description": "- [Blog issues](https://github.com/chochinlu/blog/issues) - [LinkedIn](https://www.linkedin.com/in/cho-ching-lu-02029737/) - chochinlu@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chochinlu/chochinlu.github.io.git"
+  },
+  "keywords": [],
+  "author": "chochinlu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chochinlu/chochinlu.github.io/issues"
+  },
+  "homepage": "https://github.com/chochinlu/chochinlu.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
