@@ -1,44 +1,31 @@
 @import "base";
 @import "variables";
+@import "typography";
 @import "animations";
 @import "components/button";
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 2;
-  color: $color-primary;
-}
-
-.main {
+.card {
   text-align: center;
   margin-top: 5rem;
   height: 100vh;
+
+  .heading {
+    animation-name: moveInLeft;
+    animation-duration: 0.5s;
+  }
+
+  .desc {
+    margin-bottom: 4rem;
+    animation-name: moveInRight;
+    animation-duration: 0.5s;
+  }
+
+  .contact {
+    font-size: 1.5rem;
+    animation-name: show;
+    animation-duration: 4s;
+  }
 }
-
-.heading {
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-
-  animation-name: moveInLeft;
-  animation-duration: 0.5s;
-}
-
-
-.desc {
-  font-size: 1.6rem;
-  margin-bottom: 4rem;
-  letter-spacing: 1px;
-  animation-name: moveInRight;
-  animation-duration: 0.5s;
-}
-
-.contact {
-  font-size: 1.5rem;
-  animation-name: show;
-  animation-duration: 4s;
-}
-
 
 .map {
   filter: grayscale(90%);

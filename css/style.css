@@ -9,6 +9,21 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  color: #555454; }
+
+.heading-primary {
+  font-size: 6rem;
+  letter-spacing: 0.5rem; }
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -56,34 +71,21 @@ html {
   transform: translateY(-1px);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 2;
-  color: #555454; }
-
-.main {
+.card {
   text-align: center;
   margin-top: 5rem;
   height: 100vh; }
-
-.heading {
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 0.5s; }
-
-.desc {
-  font-size: 1.6rem;
-  margin-bottom: 4rem;
-  letter-spacing: 1px;
-  animation-name: moveInRight;
-  animation-duration: 0.5s; }
-
-.contact {
-  font-size: 1.5rem;
-  animation-name: show;
-  animation-duration: 4s; }
+  .card .heading {
+    animation-name: moveInLeft;
+    animation-duration: 0.5s; }
+  .card .desc {
+    margin-bottom: 4rem;
+    animation-name: moveInRight;
+    animation-duration: 0.5s; }
+  .card .contact {
+    font-size: 1.5rem;
+    animation-name: show;
+    animation-duration: 4s; }
 
 .map {
   filter: grayscale(90%);
