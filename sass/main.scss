@@ -1,21 +1,13 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
+@import "base";
+@import "variables";
+@import "animations";
+@import "components/button";
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 2;
-  color: rgb(85, 84, 84);
+  color: $color-primary;
 }
 
 .main {
@@ -32,20 +24,6 @@ body {
   animation-duration: 0.5s;
 }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 
 .desc {
   font-size: 1.6rem;
@@ -55,66 +33,17 @@ body {
   animation-duration: 0.5s;
 }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
 .contact {
   font-size: 1.5rem;
   animation-name: show;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
-  border: 1px solid rgb(85, 84, 84);
-  border-radius: 10rem;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: rgb(85, 84, 84);
-
-  transition: all 0.2s;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
 
 .map {
+  filter: grayscale(90%);
   width: 100%;
-  height: 70%;
+  height: 80%;
   border: none;
   clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0 100%);
-  filter: grayscale(90%);
 }
