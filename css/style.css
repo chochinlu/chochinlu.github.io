@@ -57,18 +57,26 @@ body {
   100% {
     opacity: 1; } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
+  padding: 0.5rem 3rem;
   border: 1px solid #555454;
   border-radius: 10rem;
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
   color: #555454;
+  margin-right: 1.5rem;
   transition: all 0.2s; }
+  @media (max-width: 37.5em) {
+    .btn:link, .btn:visited {
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      margin-right: 1rem; } }
+  .btn:link:last-child, .btn:visited:last-child {
+    margin-right: 0; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -90,7 +98,6 @@ body {
     animation-name: moveInRight;
     animation-duration: 0.5s; }
   .card .contact {
-    font-size: 1.5rem;
     animation-name: show;
     animation-duration: 4s; }
 
